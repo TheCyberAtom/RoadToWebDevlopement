@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lists, Tables and Forms</title>
+    <style type="text/css">
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 90%;
+            color: #666666;
+            background-color: #f8f8f8;
+        }
+        li{
+            /*list-style-image: url();*/
+            line-height: 1.6em;
+        }
+        table{
+            border-spacing: 0px;
+        }
+        th,td{
+            padding: 5px 30px 5px 10px;
+            border-spacing: 0px;
+            font-size: 90%;
+            margin: 0px;
+        }
+        th,td{
+            text-align: left;
+            background-color: #e0e9f0;
+            border-top: 1px solid #f1f8fe;
+            border-bottom: 1px solid #cbd2d8;
+            border-right: 1px solid #cbd2d8;
+        }
+        tr.head th{
+            color: #ffffff;
+            background-color: #90b4de;
+            border-top: 1px solid #90b4d6;
+            border-bottom: 2px solid #547ca0;
+            border-right: 1px solid #cbd2d8;
+            text-align: center;
+            text-shadow: -1px -1px 1px #666666;
+            letter-spacing: 0.15em;
+        }
+        fieldset{
+            width: 310px;
+            margin-top: 20px;
+            border: 1px solid #d6d6d6;
+            background-color: #ffffff;
+            line-height: 1.6em;
+        }
+        legend{
+            font-style: italic;
+            color: #666666;
+        }
+        input[type="text"]{
+            padding: 2px;
+            widows: 120px;
+            padding: 2px;
+            outline:none;
+        }
+        input[type="email"]{
+            padding: 2px;
+            widows: 120px;
+            padding:2px;
+            outline:none;
+        }
+        input[type="button"]{
+            border: 1px solid #006633;
+            background-color: #009966;
+            margin: 10px;
+            padding: 5px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        input[type="button"]:hover{
+            border: 1px solid #006633;
+            background-color: #00cc33;
+            color: #000000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <body>
+        <div class="top">
+            <h1>Poetry Workshop</h1>
+            <p>we will be conductiing a number of poetry  workshops and symposiums throughout the year.</p>
+            <p>Please note that the following events are free to members:</p>
+            <ul>
+                <li>A poetry perspective</li>
+                <li>walt whitman at war</li>
+                <li>Found poem and outsider poetry</li>
+            </ul>
+        </div>
+        <div>
+            <table>
+                <tr class="head">
+                    <th></th>
+                    <th>New York</th>
+                    <th>Chicago</th>
+                    <th>San Francisco</th>
+                </tr>
+                <tr>
+                    <td>A poetic perspective</td>
+                    <td>4 feb 2021 11am - 2pm</td>
+                    <td>3 mar 2021 11am - 2pm</td>
+                    <td>4 apr 2021 11am - 2pm</td>
+                </tr>
+                <tr>
+                    <td>walt whitman at war</td>
+                    <td>11 feb 2021 11am - 2pm</td>
+                    <td>13 mar 2021 11am - 2pm</td>
+                    <td>17 apr 2021 11am - 2pm</td>
+                </tr>
+                <tr>
+                    <td>Found poem & outsider poetry</td>
+                    <td>18 feb 2021 11am - 2pm</td>
+                    <td>20 mar 2021 11am - 2pm</td>
+                    <td>24 apr 2021 11am - 2pm</td>                  
+                </tr>
+            </table>
+        </div>
+        <div class="form-box">
+            <form action="">
+                <fieldset>
+                    <legend>Register your Interest</legend>
+                    <p class="person">
+                        <label for="name">Your name :</label>
+                        <input type="text" name="name" id="name"><br>
+                        <label for="email">Your email :</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p class="location">
+                        <label for="city">Your Closet center :</label>
+                        <select name="city" id="city">
+                            <option value="ny">New York</option>
+                            <option value="ch">Chicago</option>
+                            <option value="sf">San Francisco</option>
+                        </select>
+                    </p>
+                    <span class="choose">Are you a member ?</span>
+                    <label><input type="radio" name="member" value="yes">Yes</label>
+                    <label><input type="radio" name="member" value="no">No</label>
+                </fieldset>
+                <div class="submit"><input type="button" value="Register"></div>
+            </form>
+        </div>
+    </body>
+</html>
