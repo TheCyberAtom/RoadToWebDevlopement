@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice 1</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .grid-container1{
+            display: grid;
+            background-color: rgb(233, 136, 136);
+            grid-template-columns: auto auto auto;
+            grid-gap: 5px;
+            border: 5px solid  rgb(233, 136, 136);
+            margin: 15px;
+        }
+        .grid-item{
+            background-color: aqua;
+            text-align: center;
+            padding: 15px;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .grid-container2{
+            display: grid;
+            background-color: rgb(136, 133, 133);
+            grid-template-columns: 180px 500px auto;
+            grid-gap: 5px;
+            border: 5px solid #7e7d7d;
+            margin: 15px;
+            justify-content: space-between;
+        }
+        .grid-item2{
+            background-color: rgb(228, 181, 119);
+            text-align: center;
+            padding: 15px;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .grid-container3{
+            display: grid;
+            background-color: rgb(233, 136, 196);
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 150px auto auto;
+            grid-gap: 5px;
+            border: 5px solid  rgb(233, 136, 196);
+            margin: 15px;
+            
+        }
+        .grid-item3{
+            background-color: rgb(203, 223, 94);
+            text-align: center;
+            padding: 15px;
+            font-size: larger;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+    <body>
+        <div class="grid-container1">
+            <div class="grid-item" >1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+        <div class="grid-container2">
+            <div class="grid-item2">1</div>
+            <div class="grid-item2">2</div>
+            <div class="grid-item2">3</div>
+            <div class="grid-item2">4</div>
+            <div class="grid-item2">5</div>
+            <div class="grid-item2">6</div>
+            <div class="grid-item2">7</div>
+            <div class="grid-item2">8</div>
+            <div class="grid-item2">9</div>
+        </div>
+        <div class="grid-container3">
+            <div class="grid-item3">1</div>
+            <div class="grid-item3">2</div>
+            <div class="grid-item3">3</div>
+            <div class="grid-item3">4</div>
+            <div class="grid-item3">5</div>
+            <div class="grid-item3">6</div>
+            <div class="grid-item3">7</div>
+            <div class="grid-item3">8</div>
+            <div class="grid-item3">9</div>
+        </div>
+    </body>
+</html>
